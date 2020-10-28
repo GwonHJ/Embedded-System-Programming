@@ -60,7 +60,9 @@ KS002: xxxxx명
 
 KS015: xxxxx명
 
+### 실행화면
 
+![임베디드 과제 캡쳐 (1)](https://user-images.githubusercontent.com/45057466/97445516-af1ee080-1970-11eb-8dd7-d07efaee4189.png)
 
 ### 설명
 
