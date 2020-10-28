@@ -69,33 +69,38 @@ KS015: xxxxx명
 
 나이분포
 
-  age = (line[0]-'0')*10 + (line[1]-'0'); //char를 int로
-		age = age/10; //나이대는 십의자리만 판별하면 되니까
-		age_arr[age-1]++; //해당하는 나이대에 ++
+"```"
+age = (line[0]-'0')*10 + (line[1]-'0'); //char를 int로
+age = age/10; //나이대는 십의자리만 판별하면 되니까
+age_arr[age-1]++; //해당하는 나이대에 ++
   
-  
+"```"
+
 중복하지 않은 이름 개수 세아리기
   
   // 이름이 무조건 3자리니까 3차원 배열에 이름이 존재하지않으면 cnt++
-  
-  location = (line[10]-'0')*10 + (line[11]-'0');
-		location_arr[location-1]++;
+"```"  
+location = (line[10]-'0')*10 + (line[11]-'0');
+location_arr[location-1]++;
 		
-		i = line[3]-'A';
-		j = line[4]-'A';
-		k = line[5]-'A';
+i = line[3]-'A';
+j = line[4]-'A';
+k = line[5]-'A';
 	
-		if(name_arr[i][j][k]==0){
-			name_arr[i][j][k]++;
-			cnt++;
-		}	
+if(name_arr[i][j][k]==0){
+name_arr[i][j][k]++;
+cnt++;
+}	
  
- 지역분포
+"```"
+지역분포
  
   //범위가 1~15이기 때문에 크기가 15인 배열을 만들고 해당 하는 곳에 ++
-  location = (line[10]-'0')*10 + (line[11]-'0');
-		location_arr[location-1]++;
  
+ "```"
+ location = (line[10]-'0')*10 + (line[11]-'0');
+location_arr[location-1]++;
+ "```"
 -----------------------------------------------------------------
 ## 2주차 과제
 
