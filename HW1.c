@@ -17,7 +17,7 @@ int main(){
 	int cnt = 0;
 	int whole_cnt = 0;
 	if(file == NULL){
-		printf("ÆÄÀÏ¿­±â ½ÇÆĞ\n");
+		printf("íŒŒì¼ì—´ê¸° ì‹¤íŒ¨\n");
 		return 1;
 	}
 	
@@ -57,10 +57,10 @@ int main(){
 	if(num_of==1){
 	
 		if(int1>0&&int1<1000){
-			printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d°³ Áß ÀÌ¸§Àº %d,%03d°³\n",whole_cnt,int1,int2);
+			printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %dê°œ ì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",whole_cnt,int1,int2);
 		}
-		else if(int1>=1000)	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d°³ Áß ÀÌ¸§Àº %d,%03d°³\n",whole_cnt,int1,int2);
-		else	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d°³ Áß ÀÌ¸§Àº %d°³\n",whole_cnt,int2);
+		else if(int1>=1000)	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %dê°œ ì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",whole_cnt,int1,int2);
+		else	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %dê°œ ì¤‘ ì´ë¦„ì€ %dê°œ\n",whole_cnt,int2);
 	}
 	
 	else if(num_of==2){
@@ -68,10 +68,10 @@ int main(){
 	   w_int2 = whole_cnt%1000;
 	
 		if(int1>0&&int1<1000){
-			printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d°³Áß ÀÌ¸§Àº %d,%03d°³\n",w_int1,w_int2,int1,int2);
+			printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03dê°œì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",w_int1,w_int2,int1,int2);
 		}
-		else if(int1>=1000)	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d°³ Áß ÀÌ¸§Àº %d,%03d°³\n",w_int1,w_int2,int1,int2);
-		else	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d°³ Áß ÀÌ¸§Àº %d°³\n",w_int1,w_int2,int2);
+		else if(int1>=1000)	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03dê°œ ì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",w_int1,w_int2,int1,int2);
+		else	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03dê°œ ì¤‘ ì´ë¦„ì€ %dê°œ\n",w_int1,w_int2,int2);
 	}
 	
 	else { //1234567
@@ -79,14 +79,14 @@ int main(){
 	   w_int2 = (whole_cnt/1000) - 1000;
 	   w_int3 = whole_cnt%1000;
 		if(int1>0&&int1<1000){
-			printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d,%03d°³Áß ÀÌ¸§Àº %d,%03d°³\n",w_int1,w_int2,w_int3,int1,int2);
+			printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03d,%03dê°œì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",w_int1,w_int2,w_int3,int1,int2);
 		}
-		else if(int1>=1000)	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d,%03d°³ Áß ÀÌ¸§Àº %d,%03d°³\n",w_int1,w_int2,w_int3,int1,int2);
-		else	printf("ÀüÃ¼ µ¥ÀÌÅÍ °¹¼ö %d,%03d,%03d°³ Áß ÀÌ¸§Àº %d°³\n",w_int1,w_int2,w_int3,int2);
+		else if(int1>=1000)	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03d,%03dê°œ ì¤‘ ì´ë¦„ì€ %d,%03dê°œ\n",w_int1,w_int2,w_int3,int1,int2);
+		else	printf("ì „ì²´ ë°ì´í„° ê°¯ìˆ˜ %d,%03d,%03dê°œ ì¤‘ ì´ë¦„ì€ %dê°œ\n",w_int1,w_int2,w_int3,int2);
 		
 	}
 	
-	printf("\n³ªÀÌ:\n");
+	printf("\në‚˜ì´:\n");
 	int a;
 	for(a = 1; a<9; a++){
 		
@@ -94,10 +94,10 @@ int main(){
 		int2 = age_arr[a-1]%1000;
 		
 		if(int1>0){
-			printf("%d ~ %d : %d,%03d¸í\n",a*10, a*10+9,int1,int2);
+			printf("%d ~ %d : %d,%03dëª…\n",a*10, a*10+9,int1,int2);
 		
 		}
-		else	printf("%d ~ %d : %d¸í\n",a*10, a*10+9,int2);
+		else	printf("%d ~ %d : %dëª…\n",a*10, a*10+9,int2);
 		
 	}
 	printf("\nZip code\n");
@@ -106,9 +106,9 @@ int main(){
 		int2 = location_arr[a-1]%1000;
 		
 		if(int1>0){
-			printf("%KS0%02d: %d,%03d¸í\n",a,int1,int2);
+			printf("%KS0%02d: %d,%03dëª…\n",a,int1,int2);
 		}
-		else	printf("%KS0%02d: %d¸í\n",a,int2);
+		else	printf("%KS0%02d: %dëª…\n",a,int2);
 		
 	}
 	return 0;
